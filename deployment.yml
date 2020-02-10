@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: ai-result-viewer-container
-        image: 192.168.179.25:5000/ai-result-viewer
+        image: 172.16.98.151:5000/ai-result-viewer
         imagePullPolicy: Always
         ports:
         - containerPort: 12345

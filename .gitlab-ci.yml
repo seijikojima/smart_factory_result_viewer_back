@@ -3,7 +3,7 @@ stages:
   - deployment
 
 variables:
-  DOCKER_IMAGE: 192.168.179.25:5000/ai-result-viewer
+  DOCKER_IMAGE: 172.16.98.151:5000/ai-result-viewer
   DEPLOYMENT: ai-result-viewer-deployment
 
 containerization:
