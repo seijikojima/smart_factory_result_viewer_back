@@ -15,13 +15,12 @@ app.use(express.static(path.join(__dirname,'dist')))
 
 app.post('/ml_result/', (req, res) => {
 
-  var ml_result = {
-    "red" : req.body.red,
-    "black" : req.body.black,
-    "img_path" : req.body.img_path
+  var payload = {
+    ai_rsult : req.body.ai_result
+    img_path : req.body.img_path
   }
-  
-  io.emit('send_to_front',ml_result)
+
+  io.emit('send_to_front',payload)
   res.send("here is ml_result end point!");
 });
 
