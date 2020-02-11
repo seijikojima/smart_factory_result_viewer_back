@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: ai-result-viewer-deployment
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: ai-result-viewer-deployment
