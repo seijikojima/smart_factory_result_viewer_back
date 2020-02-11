@@ -12,7 +12,7 @@ var io = require('socket.io')(server);
 
 app.use(express.static(path.join(__dirname,'dist')))
 
-app.get('/ml_result/', (req, res) => {res.send('AI result viewer')})
+app.get('/test/', (req, res) => {res.send('AI result viewer')})
 
 
 app.post('/ml_result/', (req, res) => {
