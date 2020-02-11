@@ -18,7 +18,7 @@ app.get('/test/', (req, res) => {res.send('AI result viewer')})
 app.post('/ml_result/', (req, res) => {
 
   var payload = {
-    ai_rsult : req.body.ai_result
+    ai_rsult : req.body.ai_result,
     img_path : req.body.img_path
   }
 
